@@ -1,16 +1,15 @@
 import Image from 'next/image'
 import cover from '../public/images/joker_cover.png';
 
-
 export default function Hero() {
 
     return (
-        <div className="relative isolate bg-gray-900 ">
+        <div className="relative isolate bg-gray-900">
 
             <svg
                 viewBox="0 0 1108 632"
                 aria-hidden="true"
-                className="absolute top-10 left-[calc(50%-4rem)] -z-10 w-[69.25rem] max-w-none transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
+                className="absolute top-10 left-[calc(50%-4rem)] -z-50 w-[69.25rem] max-w-none transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
             >
                 <path
                     fill="url(#175c433f-44f6-4d59-93f0-c5c51ad5566d)"
@@ -38,7 +37,7 @@ export default function Hero() {
                         Unleash your identity in the metaverse
                     </h1>
                     <p className="mt-6 text-lg leading-8 text-gray-300">
-                        the soulbound NFT avatar marketplace that can be used across metaverse.
+                        The soulbound NFT avatar marketplace that can be used across metaverse.
                     </p>
                     <div className="mt-10 flex items-center gap-x-6">
                         <a

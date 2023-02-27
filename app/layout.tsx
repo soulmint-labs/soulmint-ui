@@ -1,4 +1,5 @@
-import './globals.css'
+import './globals.css';
+import Header from '@/components/Header';
 
 export const metadata = {
   title: 'SoulMint',
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className='bg-gray-900'>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
