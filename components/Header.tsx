@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { classNames } from '@/lib/common'
+import Image from 'next/image'
 
 const navigation = [
     { name: 'Explore', href: '/explore' },
@@ -58,11 +59,17 @@ export default function Header() {
                 </div>
                 <a href="#" className="-m-1.5 p-1.5">
                     <span className="sr-only">Your Company</span>
-                    <img className="h-8 w-auto" src="/images/logo.jpg" alt="" />
+                    <Image
+                        className="h-8 w-auto"
+                        src="/images/logo.jpg"
+                        alt="soulmint logo"
+                        width={100}
+                        height={100}
+                    />
                 </a>
                 <div className="flex flex-1 justify-end">
                     <a href="#" className="text-sm font-semibold leading-6 text-gray-400 hover:text-white cursor-pointer">
-                        Log in <span aria-hidden="true">&rarr;</span>
+                        Connect <span className='md:inline hidden'>wallet</span> <span aria-hidden="true">&rarr;</span>
                     </a>
                 </div>
             </nav>
@@ -82,15 +89,17 @@ export default function Header() {
                         </div>
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
-                            <img
+                            <Image
                                 className="h-8 w-auto"
-                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                                alt=""
+                                src="/images/logo.jpg"
+                                alt="soulmint logo"
+                                width={100}
+                                height={100}
                             />
                         </a>
                         <div className="flex flex-1 justify-end">
                             <a href="#" className="text-sm font-semibold leading-6 text-gray-100">
-                                Log in <span aria-hidden="true">&rarr;</span>
+                                Connect <span className='md:inline hidden'>wallet</span> <span aria-hidden="true">&rarr;</span>
                             </a>
                         </div>
                     </div>
