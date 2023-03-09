@@ -23,4 +23,8 @@
       scrollbar-width: none; /* Firefox */
     }
 
+    .main-padding {
+      @apply 2xl:px-32 xl:px-16 lg:px-10 px-6;
+    }
+
   }
