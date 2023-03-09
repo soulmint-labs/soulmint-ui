@@ -4,11 +4,13 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { classNames } from '@/lib/common'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const navigation = [
     { name: 'Explore', href: '/explore' },
     { name: 'Apps', href: '/apps' },
     { name: 'Create', href: '/create' },
+    { name: 'Partner', href: '/partner' }
 ]
 
 export default function Header() {
@@ -41,9 +43,9 @@ export default function Header() {
                 <div className="flex flex-1">
                     <div className="hidden lg:flex lg:gap-x-12">
                         {navigation.map((item) => (
-                            <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-400 hover:text-white">
+                            <Link key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-400 hover:text-white">
                                 {item.name}
-                            </a>
+                            </Link>
                         ))}
                     </div>
                     <div className="flex lg:hidden">
@@ -57,7 +59,7 @@ export default function Header() {
                         </button>
                     </div>
                 </div>
-                <a href="#" className="-m-1.5 p-1.5">
+                <Link href="/" className="-m-1.5 p-1.5">
                     <span className="sr-only">Your Company</span>
                     <Image
                         className="h-8 w-auto"
@@ -66,7 +68,7 @@ export default function Header() {
                         width={100}
                         height={100}
                     />
-                </a>
+                </Link>
                 <div className="flex flex-1 justify-end">
                     <a href="#" className="text-sm font-semibold leading-6 text-gray-400 hover:text-white cursor-pointer">
                         Connect <span className='md:inline hidden'>wallet</span> <span aria-hidden="true">&rarr;</span>
@@ -87,7 +89,7 @@ export default function Header() {
                                 <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                             </button>
                         </div>
-                        <a href="#" className="-m-1.5 p-1.5">
+                        <Link href="/" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
                             <Image
                                 className="h-8 w-auto"
@@ -96,7 +98,7 @@ export default function Header() {
                                 width={100}
                                 height={100}
                             />
-                        </a>
+                        </Link>
                         <div className="flex flex-1 justify-end">
                             <a href="#" className="text-sm font-semibold leading-6 text-gray-100">
                                 Connect <span className='md:inline hidden'>wallet</span> <span aria-hidden="true">&rarr;</span>
@@ -105,13 +107,13 @@ export default function Header() {
                     </div>
                     <div className="mt-6 space-y-2">
                         {navigation.map((item) => (
-                            <a
+                            <Link
                                 key={item.name}
                                 href={item.href}
                                 className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-400 hover:bg-gray-900"
                             >
                                 {item.name}
-                            </a>
+                            </Link>
                         ))}
                     </div>
                 </Dialog.Panel>
