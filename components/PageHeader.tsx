@@ -1,5 +1,5 @@
 import { AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai'
-import { BsGlobe } from 'react-icons/bs'
+import { FiGlobe } from 'react-icons/fi'
 
 
 export default function PageHeader() {
@@ -30,7 +30,7 @@ export default function PageHeader() {
                             <div className="flex-shrink-0">
                                 <a href="#">
                                     <span className="sr-only">Website</span>
-                                    <BsGlobe className="h-5 w-5 text-gray-400 hover:text-gray-500" />
+                                    <FiGlobe className="h-5 w-5 text-gray-400 hover:text-gray-500" />
                                 </a>
                             </div>
                         </div>
