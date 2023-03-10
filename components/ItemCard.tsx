@@ -23,7 +23,7 @@ const ItemCard = ({
 }: ItemCardProps) => {
     return (
         <div
-            className="group relative flex flex-col overflow-hidden rounded-lg border border-gray-800 bg-gray-800"
+            className="group relative flex flex-col overflow-hidden rounded-lg border border-gray-800 bg-gray-900"
         >
             <div className="bg-gray-800 group-hover:opacity-75 aspect-1 overflow-hidden relative">
                 {imgSrc && (

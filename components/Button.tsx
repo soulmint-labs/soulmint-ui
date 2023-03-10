@@ -20,7 +20,7 @@ const styleClass = {
             'bg-gray-200 hover:bg-gray-300 focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 text-gray-900',
         danger:
             'bg-red-500 hover:bg-red-600 focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 text-white',
-        dark: 'primary-text hover:bg-gray-100 hover:dark:bg-gray-700 secondary-bg',
+        dark: 'text-gray-200 hover:bg-gray-100 hover:dark:bg-gray-700 bg-gray-800',
         light:
             'bg-gray-100 hover:bg-gray-200 focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 text-gray-900',
         success:

@@ -590,7 +590,7 @@ const StepThree = ({
                                 <div className='flex items-center justify-between w-full my-4'>
                                     <p className="text-sm font-medium">Service charges</p>
                                     <p className="text-sm font-medium">
-                                        <span className='ml-2 primary-text'>{formData.price && `${((formData.currency === "SOUL" ? 0.01 : 0.02) * parseFloat(formData.price))} ${formData.currency}`}</span>
+                                        <span className='ml-2 text-gray-200'>{formData.price && `${((formData.currency === "SOUL" ? 0.01 : 0.02) * parseFloat(formData.price))} ${formData.currency}`}</span>
                                         <span className='ml-2'>{formData.currency === "SOUL" ? "1 %" : "2 %"}</span>
                                     </p>
                                 </div>
@@ -804,7 +804,7 @@ const StepFive = ({
                                             <div className="flex text-sm text-gray-600 justify-center">
                                                 <label
                                                     htmlFor="file-upload"
-                                                    className="relative font-medium primary-text">
+                                                    className="relative font-medium text-gray-200">
                                                     <span>Upload multiple images</span>
                                                 </label>
                                             </div>
